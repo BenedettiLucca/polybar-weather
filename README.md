@@ -3,6 +3,7 @@ Display weather status in polybar.
 
 ### Dependecies
 - Python3
+- Nerd Fonts
 
 ### Settings
 Add the following to .../polybar/modules:
