@@ -5,11 +5,18 @@ Display weather status in polybar.
 - Python3
 
 ### Settings
+Add the following to .../polybar/modules:
 ``` ini
 [module/weather]
 type = custom/script
 exec = python ~/path/to/polybarWeather.py -i 745042 -a appid123goes456here789 -t Celcius
 ```
+And edit the path to weatherIcons.json in polybarWeather.py
+``` ini
+with open('your_location/weatherIcons.json') as file:
+    d = json.loads(file.read())
+```
+
 ### Usage
 Here is the parameters.
 
