@@ -39,7 +39,7 @@ python ~/path/to/polybarWeather.py -i 745042 -a appid123goes456here789
 ```
 In the example above, 745042 is the city id of Istanbul, below there is an information on getting your city's id. And the output will be:
 ```
-rain 8°C
+ 8°C
 ```
 Celcius is the default output type, you can change it to Fahrenheit or Kelvin.
 ``` ini
