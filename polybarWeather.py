@@ -53,6 +53,9 @@ zip_code_ = correct_argument(ids.zip_code)
 country_code_ = correct_argument(ids.country_code)
 o_type_ = correct_argument(ids.o_type)
 
+with open('your_location/weatherIcons.json') as file:
+    d = json.loads(file.read())
+
 def getWeatherByCityID(c_id, a_id=app_id_):
 	r = requests.get('http://api.openweathermap.org/data/2.5/weather?id='+ city_id_ + '&appid=' + app_id_)
 	return r.json()
@@ -82,7 +85,8 @@ if __name__ == "__main__":
 	temp = int(r['main']['temp'])
 	humidity = r['main']['humidity']
 	weather = r['weather'][0]['description']
-	if o_type_ is not None:
-		print(weather + ' ' + degreeType(temp, o_type_))
-	else:
-		print(weather + ' ' + str(temp-273) + '°C')
+weatherIcon = d[f'{weather}']
+if o_type_ is not None:
+		print(weatherIcon + ' ' + degreeType(temp, o_type_))
+else:
+		print(weatherIcon + ' ' + str(temp-273) + '°C')
