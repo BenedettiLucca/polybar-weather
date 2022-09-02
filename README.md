@@ -11,7 +11,7 @@ Add the following to .../polybar/modules
 type = custom/script
 exec = python ~/path/to/polybarWeather.py
 ```
-And edit the paths to the json files in polybarWeather.py
+And edit the paths to the .json files in polybarWeather.py
 ``` ini
 if method == 'lat/lon':
     with open('your_path/config.json') as file:
@@ -40,4 +40,4 @@ Change parameters in config.json
 
 ### API
 I've changed the API from openweather to https://documenter.getpostman.com/view/11074732/TzJpizur
-due to request limits. 
+due to request limits.
