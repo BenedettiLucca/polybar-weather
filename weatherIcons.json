@@ -1,11 +1,11 @@
 {
-    "clear sky": "",
-    "few clouds": "",
-    "clouds": "",
-    "many clouds": "",
-    "rain": "",
-    "heavy rain": "",
-    "thunderstorm": "",
-    "snow": "",
-    "mist": ""
+    "céu limpo": "",
+    "poucas nuvens": "",
+    "nublado": "",
+    "muitas nuvens": "",
+    "chuva": "",
+    "chuva pesada": "",
+    "trovoadas": "",
+    "neve": "",
+    "nevoeiro": ""
 }
