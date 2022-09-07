@@ -33,6 +33,6 @@ with open('your_path/weatherIcons.json') as file:
     d = json.loads(file.read())
 
 temp = int(r["main"]["temp"])
-weather = r['weather'][0]['description']
+weather = r['weather'][0]['icon']
 weatherIcon = d[f'{weather}']
 print(weatherIcon + ' ' + str(temp) + '°C')
